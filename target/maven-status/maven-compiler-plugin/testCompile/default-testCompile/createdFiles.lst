@@ -1,0 +1,8 @@
+com\automation\actions\LoginPageAction.class
+com\automation\actions\HomePageAction.class
+com\automation\pageObjects\HomePage.class
+com\automation\utility\PropertyReader.class
+com\automation\utility\YamlReader.class
+com\automation\tests\LoginTest.class
+com\automation\pageObjects\LoginPage.class
+com\automation\session\StartSession.class
