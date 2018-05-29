@@ -1,0 +1,17 @@
+public static String ColumnValue(int articleId, String columnName) {
+
+		String value = "";
+		// define query arguments
+		Object[] params = new Object[] { articleId };
+
+		// define sql query
+		String sql = "select * from per_article_index where indexing_element_type = 'LX' and article_id = ?";
+
+		// execute insert query to insert the data
+		List<Map<String, Object>> record = jdbcTemplate.queryForList(sql, params);
+		for (Map row : record) {
+			value = row.get(columnName).toString();
+		}
+
+		return value;
+	}
